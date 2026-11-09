@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Activity Leaders and Instructors | Around the World Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="about-Us.html">About Us</a>
+        <a href="member-dashboard.html">Member</a>
+        <a href="manager-dashboard.html">Manager</a>
+    </nav>
+
+<header class="site-header">
+<img src="images/logo.jpg" alt="Around the World Club logo" width="100">
+    <div class="header-content">
+        <h1>Around the World</h1>
+        <p>Explore cultures through food, art, language,
+           traditions, and shared experiences.</p>
+    </div>
+</header>
+    <main class="container">
+        <p class="breadcrumb">
+            <a href="home.html">Home</a> &gt;
+            <a href="manager-dashboard.html">Manager Dashboard</a> &gt;
+            Manage Activity Leaders and Instructors
+        </p>
+        <h2 class="page-title">Manage Activity Leaders and Instructors</h2>
+
+        <!-- Section 1: delete instructors -->
+        <section class="current-instructors">
+            <h3 class="section-title">Current Instructors</h3>
+            <form action="#" method="post">
+                <table class="instructors-table">
+                    <tr><th>Photo</th><th>Name</th><th>Area of Expertise</th><th>Contact Info</th><th>Select</th></tr>
+                    <tr>
+                        <td><img src="images/instructors/instructor-Fahad-Abdullah.jpg" alt="Fahad Abdullah" width="50"></td>
+                        <td>Fahad Abdullah</td>
+                        <td>Saudi Arabian Culture and Traditions</td>
+                        <td>fahad.inst@aroundtheworld.com</td>
+                        <td><input type="checkbox" name="delete" value="fahad-abdullah"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/instructors/instructor-Nouf-Nasser.jpg" alt="Nouf Nasser" width="50"></td>
+                        <td>Nouf Nasser</td>
+                        <td>Italian Cuisine</td>
+                        <td>nouf.inst@aroundtheworld.com</td>
+                        <td><input type="checkbox" name="delete" value="nouf-nasser"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/instructors/instructor-Osama-Faisal.jpg" alt="Osama Faisal" width="50"></td>
+                        <td>Osama Faisal</td>
+                        <td>Japanese Culture</td>
+                        <td>osama.inst@aroundtheworld.com</td>
+                        <td><input type="checkbox" name="delete" value="osama-faisal"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/instructors/instructor-Sama-Khalid.jpg" alt="Sama Khalid" width="50"></td>
+                        <td>Sama Khalid</td>
+                        <td>Spanish Language and Culture</td>
+                        <td>sama.inst@aroundtheworld.com</td>
+                        <td><input type="checkbox" name="delete" value="sama-khalid"></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn">Delete Selected</button>
+            </form>
+        </section>
+
+        <!-- Section 2: add a new instructor -->
+        <section class="add-instructor">
+            <h3 class="section-title">Add New Instructor</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="instructor-name">Name:</label>
+                    <input type="text" id="instructor-name" name="instructor-name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-photo">Photo:</label>
+                    <input type="file" id="instructor-photo" name="instructor-photo" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-dob">Date of Birth:</label>
+                    <input type="date" id="instructor-dob" name="instructor-dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-email">Email:</label>
+                    <input type="email" id="instructor-email" name="instructor-email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-expertise">Area of Expertise:</label>
+                    <input type="text" id="instructor-expertise" name="instructor-expertise" placeholder="Enter expertise" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-skills">Skills:</label>
+                    <input type="text" id="instructor-skills" name="instructor-skills" placeholder="Enter skills" required>
+                </div>
+                <div class="form-group">
+                    <label for="instructor-education">Education:</label>
+                    <input type="text" id="instructor-education" name="instructor-education" placeholder="Enter education" required>
+                </div>
+                <button type="submit" class="btn">Add Instructor</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Website Footer -->
+<footer>
+
+    <div class="footer-left">
+
+        <div class="footer-brand">
+            <img src="images/logo.jpg"
+                 alt="Around the World Club logo"
+                 width="100">
+
+            <h2>Around the World</h2>
+        </div>
+
+        <p>Explore cultures through food, art, language, traditions, and shared experiences.</p>
+
+        <p>&copy; 2026 Around the World | Contact: info@aroundtheworld.com</p>
+
+    </div>
+
+    <div class="footer-right">
+        <p>
+            Come help people explore the world<br>
+            <a href="about-Us.html#join-our-team">Join as an Instructor!</a>
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>

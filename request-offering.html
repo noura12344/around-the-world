@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request to Join an Offering | Around the World Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Main Navigation Bar -->
+<nav>
+    <a href="home.html">Home</a>
+    <a href="offerings.html">Offerings</a>
+    <a href="about-Us.html">About Us</a>
+    <a href="member-dashboard.html">Member</a>
+    <a href="manager-dashboard.html">Manager</a>
+</nav>
+
+  <header class="site-header">
+      <img src="images/logo.jpg" alt="Around the World Club logo" width="100">
+    <div class="header-content">
+        <h1>Around the World</h1>
+        <p>Explore cultures through food, art, language,
+           traditions, and shared experiences.</p>
+    </div>
+   </header>
+   
+
+
+    <main class="request-offering">
+
+        <!-- Breadcrumb -->
+     <p class="breadcrumb">
+        <a href="home.html">Home</a> &gt;
+        <a href="member-dashboard.html">Member Dashboard</a> &gt;
+        <span>Request to Join an Offering</span>
+    </p>
+
+
+        <!-- Page Title -->
+        <h2>Request to Join an Offering</h2>
+
+        <!-- Request Form -->
+        <form class="request-form" action="#" method="get">
+
+            <!-- Offering Selection -->
+            <div class="form-group">
+                <label for="offering">Offering:</label>
+                <select id="offering" name="offering" required>
+                    <option value="" selected disabled>
+                        Select an Offering
+                    </option>
+                    <option value="sushi">Sushi Workshop</option>
+                    <option value="matcha">Matcha Workshop</option>
+					<option value="origami">Origami Workshop</option>
+                </select>
+            </div>
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       placeholder="Enter your name"
+                       required>
+            </div>
+
+            <!-- Preferred Date -->
+            <div class="form-group">
+                <label for="preferred-date">Preferred Date:</label>
+                <select id="preferred-date"
+                        name="preferred-date" required>
+                    <option value="" selected disabled>
+                        Select Date
+                    </option>
+                    <option value="2026-10-10">10/10/2026</option>
+                    <option value="2026-10-17">17/10/2026</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- Website Footer -->
+<footer>
+
+    <div class="footer-left">
+
+        <div class="footer-brand">
+            <img src="images/logo.jpg"
+                 alt="Around the World Club logo"
+                 width="100">
+
+            <h2>Around the World</h2>
+        </div>
+
+        <p>Explore cultures through food, art, language, traditions, and shared experiences.</p>
+
+        <p>&copy; 2026 Around the World | Contact: info@aroundtheworld.com</p>
+
+    </div>
+
+    <div class="footer-right">
+        <p>
+            Come help people explore the world<br>
+            <a href="about-Us.html#join-our-team">Join as an Instructor!</a>
+        </p>
+    </div>
+
+</footer>
+
+</body>
+</html>

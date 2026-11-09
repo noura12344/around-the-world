@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Offerings | Around the World Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+<nav>
+    <a href="home.html">Home</a>
+    <a href="offerings.html">Offerings</a>
+    <a href="about-Us.html">About Us</a>
+    <a href="member-dashboard.html">Member</a>
+    <a href="manager-dashboard.html">Manager</a>
+</nav>
+
+<header class="site-header">
+<img src="images/logo.jpg" alt="Around the World Club logo" width="100">
+    <div class="header-content">
+        <h1>Around the World</h1>
+        <p>Explore cultures through food, art, language,
+           traditions, and shared experiences.</p>
+    </div>
+</header>
+
+    
+<main class="offerings-page">
+
+    <h2>Club Offerings</h2>
+
+    <div class="offerings-controls">
+
+        <div class="country-filter">
+            <label for="country">Country:</label>
+
+            <select id="country" name="country">
+                <option value="">Select a Country</option>
+                <option value="italy">Italy</option>
+                <option value="japan">Japan</option>
+                <option value="mexico">Mexico</option>
+                <option value="saudi">Saudi Arabia</option>
+            </select>
+        </div>
+
+
+
+
+<div class="offerings-sort">
+    <label for="sort-offerings">Sort by:</label>
+    <select id="sort-offerings" name="sort-offerings">
+        <option value="">Sort by</option>
+
+        <optgroup label="Price">
+            <option value="low-high">Low to High</option>
+            <option value="high-low">High to Low</option>
+        </optgroup>
+
+        <optgroup label="Name">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+        </optgroup>
+    </select>
+</div>
+
+
+
+</div> <!-- End of offerings-controls -->
+
+<div class="offerings-list">
+
+    <div class="offering-card" data-country="italy">
+
+        <img src="images/offerings/italy-italian-cooking.jpg"
+             alt="Italian Cooking Night"
+             width="200">
+
+        <h3>Italian Cooking Night</h3>
+
+        <p>Learn to prepare traditional Italian dishes.</p>
+
+        <p>Price: 60 SAR</p>
+
+    </div>
+<div class="offering-card" data-country="japan">
+
+    <img src="images/offerings/japan-japanese-calligraphy.jpg"
+        alt="Japanese Calligraphy"
+        width="200">
+
+    <h3>Japanese Calligraphy</h3>
+
+    <p>Learn the art of traditional Japanese writing.</p>
+
+    <p>Price: 70 SAR</p>
+
+</div>
+<div class="offering-card" data-country="mexico">
+
+    <img src="images/offerings/mexico-spanish-conversation.jpg"
+         alt="Spanish Conversation Workshop"
+         width="200">
+    <h3>Spanish Conversation Workshop</h3>
+
+    <p>Practice Spanish conversation and learn basic expressions.</p>
+
+    <p>Price: 0 SAR</p>
+
+</div>
+
+<!-- Sushi Workshop -->
+<div class="offering-card" data-country="japan">
+
+    <img src="images/offerings/japan-sushi-making.jpg"
+        alt="Sushi Workshop"
+        width="200">
+    <h3>Sushi Workshop</h3>
+
+    <p>Learn how to prepare traditional Japanese sushi.</p>
+
+    <p>Price: 50 SAR</p>
+
+</div>
+
+<!-- Matcha Workshop -->
+<div class="offering-card" data-country="japan">
+
+    <img src="images/offerings/japan-matcha-workshop.jpg"
+         alt="Matcha Workshop"
+         width="200">
+
+    <h3>Matcha Workshop</h3>
+
+    <p>Learn how to prepare matcha and explore Japanese tea traditions.</p>
+
+    <p>Price: 30 SAR</p>
+
+</div>
+
+<!-- Origami Workshop -->
+<div class="offering-card" data-country="japan">
+
+    <img src="images/offerings/japan-origami-workshop.jpg"
+         alt="Origami Workshop"
+         width="200">
+
+    <h3>Origami Workshop</h3>
+
+    <p>Learn traditional Japanese paper-folding techniques.</p>
+
+    <p>Price: 40 SAR</p>
+
+</div>
+
+
+<!-- Italian Fresh Pasta Workshop -->
+<div class="offering-card" data-country="italy">
+
+    <img src="images/offerings/italy-fresh-pasta.jpg"
+         alt="Italian Fresh Pasta Workshop"
+         width="200">
+
+    <h3>Italian Fresh Pasta Workshop</h3>
+
+    <p>Learn how to make fresh Italian pasta from scratch.</p>
+
+    <p>Price: 65 SAR</p>
+
+</div>
+
+<!-- Mexican Taco Making Workshop -->
+<div class="offering-card" data-country="mexico">
+
+    <img src="images/offerings/mexico-taco-making.jpg"
+         alt="Mexican Taco Making Workshop"
+         width="200">
+
+    <h3>Mexican Taco Making Workshop</h3>
+
+    <p>Learn how to prepare traditional Mexican tacos with fresh ingredients.</p>
+
+    <p>Price: 55 SAR</p>
+
+</div>
+
+<!-- Saudi Coffee Workshop -->
+<div class="offering-card" data-country="saudi">
+
+    <img src="images/offerings/saudi-coffee-making.jpg"
+         alt="Saudi Coffee Workshop"
+         width="200">
+
+    <h3>Saudi Coffee Workshop</h3>
+
+    <p>Learn how to prepare traditional Saudi coffee and explore Saudi hospitality customs.</p>
+
+    <p>Price: 45 SAR</p>
+
+</div>
+
+
+<!-- Arabic Calligraphy Workshop -->
+<div class="offering-card" data-country="saudi">
+
+    <img src="images/offerings/saudi-arabic-calligraphy.jpg"
+         alt="Arabic Calligraphy Workshop"
+         width="200">
+
+    <h3>Arabic Calligraphy Workshop</h3>
+
+    <p>Learn traditional Arabic calligraphy and explore its cultural significance.</p>
+
+    <p>Price: 75 SAR</p>
+
+</div>
+
+
+</div>
+
+</main>
+
+    
+
+<!-- Website Footer -->
+<footer>
+
+    <div class="footer-left">
+
+        <div class="footer-brand">
+            <img src="images/logo.jpg"
+                 alt="Around the World Club logo"
+                 width="100">
+
+            <h2>Around the World</h2>
+        </div>
+
+        <p>Explore cultures through food, art, language, traditions, and shared experiences.</p>
+
+        <p>&copy; 2026 Around the World | Contact: info@aroundtheworld.com</p>
+
+    </div>
+
+    <div class="footer-right">
+        <p>
+            Come help people explore the world<br>
+            <a href="about-Us.html#join-our-team">Join as an Instructor!</a>
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="offerings.js"></script>
+
+</body>
+</html>

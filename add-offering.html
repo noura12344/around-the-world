@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Add New Offering | Around the World Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="about-Us.html">About Us</a>
+        <a href="member-dashboard.html">Member</a>
+        <a href="manager-dashboard.html">Manager</a>
+    </nav>
+
+<header class="site-header">
+<img src="images/logo.jpg" alt="Around the World Club logo" width="100">
+    <div class="header-content">
+        <h1>Around the World</h1>
+        <p>Explore cultures through food, art, language,
+           traditions, and shared experiences.</p>
+    </div>
+</header>
+    <main class="container">
+        <p class="breadcrumb">
+            <a href="home.html">Home</a> &gt;
+            <a href="manager-dashboard.html">Manager Dashboard</a> &gt;
+            Add New Offering
+        </p>
+        <h2 class="page-title">Add New Offering</h2>
+
+        <form class="offering-form" action="#" method="post">
+            <div class="form-group">
+                <label for="offering-name">Offering Name:</label>
+                <input type="text" id="offering-name" name="offering-name" placeholder="Enter name" required>         
+            </div>
+            <div class="form-group">
+                <label for="offering-country">Country:</label>
+                <input type="text" id="offering-country" name="offering-country" placeholder="Enter country" required>
+            </div>
+            <div class="form-group">
+                <label for="offering-price">Price (SAR):</label>
+                <input type="number" id="offering-price" name="offering-price" min="0" placeholder="Enter price (0 if free)" required>
+            </div>
+            <div class="form-group">
+                <label for="offering-description">Offering Description:</label>
+                <textarea id="offering-description" name="offering-description" rows="5" cols="40" placeholder="Enter description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="offering-image">Image:</label>
+                <input type="file" id="offering-image" name="offering-image" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+
+<!-- Website Footer -->
+<footer>
+
+    <div class="footer-left">
+
+        <div class="footer-brand">
+            <img src="images/logo.jpg"
+                 alt="Around the World Club logo"
+                 width="100">
+
+            <h2>Around the World</h2>
+        </div>
+
+        <p>Explore cultures through food, art, language, traditions, and shared experiences.</p>
+
+        <p>&copy; 2026 Around the World | Contact: info@aroundtheworld.com</p>
+
+    </div>
+
+    <div class="footer-right">
+        <p>
+            Come help people explore the world<br>
+            <a href="about-Us.html#join-our-team">Join as an Instructor!</a>
+        </p>
+    </div>
+
+</footer>
+</body>
+</html>

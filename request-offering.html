@@ -43,7 +43,7 @@
         <h2>Request to Join an Offering</h2>
 
         <!-- Request Form -->
-        <form class="request-form" action="#" method="get">
+        <form class="request-form" id="request-form" novalidate>
 
             <!-- Offering Selection -->
             <div class="form-group">
@@ -68,18 +68,19 @@
                        required>
             </div>
 
-            <!-- Preferred Date -->
             <div class="form-group">
-                <label for="preferred-date">Preferred Date:</label>
-                <select id="preferred-date"
-                        name="preferred-date" required>
-                    <option value="" selected disabled>
-                        Select Date
-                    </option>
-                    <option value="2026-10-10">10/10/2026</option>
-                    <option value="2026-10-17">17/10/2026</option>
-                </select>
-            </div>
+             <label for="preferred-date">Preferred Date:</label>
+              <select id="preferred-date"
+               name="preferred-date" required>
+              <option value="" selected disabled>
+                      Select Date
+              </option>
+              <option value="2026-11-10" class="past-date">10/11/2026</option>
+              <option value="2026-12-05">05/12/2026</option>
+              <option value="2026-12-12">12/12/2026</option>
+              <option value="2026-12-25">25/12/2026</option>
+            </select>
+           </div>
 
             <!-- Submit Button -->
             <div class="form-actions">
@@ -87,6 +88,8 @@
             </div>
 
         </form>
+		
+		<div id="submitted-requests"></div>
 
     </main>
 
@@ -117,6 +120,6 @@
     </div>
 
 </footer>
-
+<script src="request.js"></script>
 </body>
 </html>

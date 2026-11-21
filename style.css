@@ -1004,3 +1004,114 @@ footer a {
     margin-bottom: 15px;
   }
 }
+
+/* Phase 3 - Dark Theme */
+
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #f5f0e6;
+}
+
+body.dark-theme nav,
+body.dark-theme .site-header,
+body.dark-theme footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-theme .card {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+body.dark-theme a {
+    color: #f0d58a;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p {
+    color: #f5f0e6;
+}
+
+/* Position the theme button inside the header */
+
+.site-header {
+    position: relative;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background-color: #98742e;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+/* Phase 3 - Back to Top Button */
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #98742e;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+
+    z-index: 1000;
+
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+#back-to-top:hover {
+    background-color: #6b5224;
+}
+/* Phase 3 - Real-Time Clock */
+
+#live-clock {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 12px;
+    padding: 8px;
+}
+/* Phase 3 - Fix Review Cards in Dark Mode */
+
+/* Fix review text in dark mode */
+body.dark-theme .reviews .review,
+body.dark-theme .reviews .review h3,
+body.dark-theme .reviews .review p {
+    color: #2b2b2b;
+}
+
+/* Keep review stars gold in dark mode */
+body.dark-theme .reviews .review p:first-of-type {
+    color: #d99a00;
+}
+
+#preferred-date option.past-date {
+    color: #999999;
+}

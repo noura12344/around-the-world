@@ -1007,32 +1007,37 @@ footer a {
 
 /* Phase 3 - Dark Theme */
 
+
 body.dark-theme {
-    background-color: #1e1e1e;
-    color: #f5f0e6;
+    background-color: #252820;
+    color: #F1EBDD;
 }
 
 body.dark-theme nav,
 body.dark-theme .site-header,
 body.dark-theme footer {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #343A30;
+    color: #F1EBDD;
 }
 
 body.dark-theme .card {
-    background-color: #444444;
-    color: #ffffff;
+    background-color: #343A30;
+    color: #F1EBDD;
 }
 
 body.dark-theme a {
-    color: #f0d58a;
+    color: #B89A62;
 }
 
 body.dark-theme h1,
 body.dark-theme h2,
 body.dark-theme h3,
 body.dark-theme p {
-    color: #f5f0e6;
+    color: #F1EBDD;
+}
+
+body.dark-theme .site-header {
+    background-image: linear-gradient(120deg, #495445, #343A30);
 }
 
 /* Position the theme button inside the header */
@@ -1040,6 +1045,7 @@ body.dark-theme p {
 .site-header {
     position: relative;
 }
+
 
 #theme-toggle {
     position: absolute;
@@ -1054,7 +1060,7 @@ body.dark-theme p {
     border-radius: 50%;
     cursor: pointer;
 
-    background-color: #98742e;
+    background-color: #B89A62;
     color: #ffffff;
     font-size: 22px;
 }
@@ -1104,7 +1110,7 @@ body.dark-theme p {
 
 /* Offerings Page */
 body.dark-theme .offering-card {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
@@ -1117,7 +1123,7 @@ body.dark-theme .offering-card p {
 body.dark-theme .club-mission p,
 body.dark-theme .instructor-card,
 body.dark-theme .join-team-form {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
@@ -1133,7 +1139,7 @@ body.dark-theme .evaluation-form,
 body.dark-theme .join-team-form,
 body.dark-theme .add-instructor form,
 body.dark-theme .current-instructors form {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
@@ -1162,14 +1168,14 @@ body.dark-theme textarea::placeholder {
 /* Manager Dashboard Tables */
 body.dark-theme .offerings-table,
 body.dark-theme .instructors-table {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
 /* Member Dashboard */
 body.dark-theme .country-progress,
 body.dark-theme .participation-requests {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
@@ -1182,8 +1188,7 @@ body.dark-theme .participation-requests td {
 
 /* Instructor Profile Pages */
 body.dark-theme .instructor-table {
-    background-color: #3f3f3f;
-    color: #f5f0e6;
+    background-color: #343A30
 }
 
 /* Table Cells Across Pages */
@@ -1233,19 +1238,19 @@ body.dark-theme .club-mission p {
 
 /* Manager Dashboard - Table Rows */
 body.dark-theme .offerings-table td {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
 /* Member Dashboard - Table Rows */
 body.dark-theme .participation-requests table td {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
 /* Breadcrumbs on Both Dashboards */
 body.dark-theme .breadcrumb {
-    background-color: #3f3f3f;
+    background-color: #343A30;
     color: #f5f0e6;
 }
 
@@ -1256,16 +1261,44 @@ body.dark-theme .breadcrumb a {
 /* Phase 3 - Home Page Review Visibility Fix */
 
 body.dark-theme .reviews .review {
-    background-color: #ffffff;
-    color: #2b2b2b;
+    background-color: #343A30;
+    color: #f5f0e6;
 }
 
 body.dark-theme .reviews .review h3,
 body.dark-theme .reviews .review p {
-    color: #2b2b2b;
+    color: #f5f0e6;
 }
 
 /* Keep the review stars gold */
 body.dark-theme .reviews .review p:first-of-type {
     color: #d99a00;
+}
+
+/* Phase 3 - All Instructor Profiles Dark Mode Fix */
+
+body.dark-theme .instructor-table th {
+    background-color: #343A30;
+    color: #f5f0e6;
+}
+
+body.dark-theme .instructor-table td {
+    background-color: #343A30;
+    color: #f5f0e6;
+}
+
+/* Dark Travel Theme - Card Hover Effects */
+
+body.dark-theme .card:hover,
+body.dark-theme .offering-card:hover,
+body.dark-theme .instructor-card:hover {
+    background-color: #495445;
+    border-top-color: #b99a5b;
+}
+
+/* Dark Travel Theme - Member Dashboard */
+
+body.dark-theme .participation-requests {
+    padding: 20px;
+    border-radius: 10px;
 }

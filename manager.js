@@ -23,10 +23,25 @@ if (addForm) {
     var image = document.getElementById("offering-image").files[0];
 
     var problems = "";
-
-    if (name === "" || country === "" || price === "" || description === "" || !image) {
-      problems += "Please complete all fields.\n";
-    }
+        var missing = [];
+        if (name === "") {
+            missing.push("Offering Name");
+        }
+        if (country === "") {
+            missing.push("Country");
+        }
+        if (price === "") {
+            missing.push("Price");
+        }
+        if (description === "") {
+            missing.push("Offering Description");
+        }
+        if (!image) {
+            missing.push("Image");
+        }
+        if (missing.length > 0) {
+            problems += "Please complete all fields. Missing: " + missing.join(", ") + ".\n";
+               }
 
     if (name !== "" && /^\d/.test(name)) {
       problems += "The offering name cannot start with a number.\n";

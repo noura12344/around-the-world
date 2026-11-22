@@ -22,6 +22,9 @@
         <p>Explore cultures through food, art, language,
            traditions, and shared experiences.</p>
     </div>
+    <button type="button" id="theme-toggle" aria-label="Switch theme">
+        🌙
+    </button>
 </header>
     <main class="container">
         <p class="breadcrumb">
@@ -72,7 +75,7 @@
         <!-- Section 2: add a new instructor -->
         <section class="add-instructor">
             <h3 class="section-title">Add New Instructor</h3>
-            <form id="add-instructor-form" action="#" method="post">
+            <form id="add-instructor-form" action="#" method="post" novalidate>
                 <div class="form-group">
                     <label for="instructor-name">Name:</label>
                     <input type="text" id="instructor-name" name="instructor-name" placeholder="Enter name" required>
@@ -135,4 +138,5 @@
 </footer>
 </body>
 <script src="instructors.js"></script>
+<script src="theme.js"></script>
 </html>

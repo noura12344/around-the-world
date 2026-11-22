@@ -8,22 +8,6 @@ document.getElementById("vote-submit").onclick = function () {
     }
 };
 
-// Theme Switch
-// Theme Switch - Light and Dark Mode
-document.getElementById("theme-toggle").onclick = function () {
-
-    document.body.classList.toggle("dark-theme");
-
-    if (document.body.classList.contains("dark-theme")) {
-        document.getElementById("theme-toggle").textContent = "☀️";
-        document.getElementById("theme-toggle").setAttribute("aria-label", "Switch to light theme");
-    } else {
-        document.getElementById("theme-toggle").textContent = "🌙";
-        document.getElementById("theme-toggle").setAttribute("aria-label", "Switch to dark theme");
-    }
-
-};
-
 // Back to Top Button
 var backToTopButton = document.getElementById("back-to-top");
 

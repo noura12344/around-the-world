@@ -108,22 +108,43 @@ addForm.onsubmit = function () {
 
   var problems = "";
 
-  if (name === "" || !photo || dob === "" || email === "" ||
-      expertise === "" || skills === "" || education === "") {
-    problems += "Please complete all fields.\n";
-  }
+    var missing = [];
+    if (name === "") {
+        missing.push("Name");
+    }
+    if (!photo) {
+        missing.push("Photo");
+    }
+    if (dob === "") {
+        missing.push("Date of Birth");
+    }
+    if (email === "") {
+        missing.push("Email");
+    }
+    if (expertise === "") {
+        missing.push("Area of Expertise");
+    }
+    if (skills === "") {
+        missing.push("Skills");
+    }
+    if (education === "") {
+        missing.push("Education");
+    }
+    if (missing.length > 0) {
+        problems += "Please complete all fields. Missing: " + missing.join(", ") + ".\n";
+    }
 
-  if (name !== "" && !/^[A-Za-z\u0600-\u06FF][A-Za-z\u0600-\u06FF\s.'-]*$/.test(name)) {
-    problems += "The name must contain letters only.\n";
-  }
+    if (name !== "" && !/^[A-Za-z\u0600-\u06FF][A-Za-z\u0600-\u06FF\s.'-]*$/.test(name)) {
+        problems += "The name must contain letters only.\n";
+    }
 
-  if (email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    problems += "Please enter a valid email address.\n";
-  }
+    if (email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        problems += "Please enter a valid email address.\n";
+    }
 
-  if (photo && photo.type.indexOf("image/") !== 0) {
-    problems += "Please upload an image file.\n";
-  }
+    if (photo && photo.type.indexOf("image/") !== 0) {
+        problems += "Please upload an image file.\n";
+    }
 
   if (dob !== "") {
     var date = new Date(dob);

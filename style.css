@@ -1098,20 +1098,174 @@ body.dark-theme p {
     margin-top: 12px;
     padding: 8px;
 }
-/* Phase 3 - Fix Review Cards in Dark Mode */
+/* =========================================
+   PHASE 3 - DARK MODE VISIBILITY FIXES
+   ========================================= */
 
-/* Fix review text in dark mode */
-body.dark-theme .reviews .review,
+/* Offerings Page */
+body.dark-theme .offering-card {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+body.dark-theme .offering-card h3,
+body.dark-theme .offering-card p {
+    color: #f5f0e6;
+}
+
+/* About Us Page */
+body.dark-theme .club-mission p,
+body.dark-theme .instructor-card,
+body.dark-theme .join-team-form {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* About Us - Instructor Links */
+body.dark-theme .instructor-card a {
+    color: #f0cf83;
+}
+
+/* Forms Across All Pages */
+body.dark-theme .offering-form,
+body.dark-theme .request-form,
+body.dark-theme .evaluation-form,
+body.dark-theme .join-team-form,
+body.dark-theme .add-instructor form,
+body.dark-theme .current-instructors form {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Form Labels and Text */
+body.dark-theme .form-group label,
+body.dark-theme .rating-group legend,
+body.dark-theme .rating-group p,
+body.dark-theme .rating-options label {
+    color: #f5f0e6;
+}
+
+/* Inputs, Dropdowns and Textareas */
+body.dark-theme input:not([type="checkbox"]):not([type="radio"]),
+body.dark-theme select,
+body.dark-theme textarea {
+    background-color: #ffffff;
+    color: #252525;
+}
+
+/* Input Placeholder Text */
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+    color: #666666;
+}
+
+/* Manager Dashboard Tables */
+body.dark-theme .offerings-table,
+body.dark-theme .instructors-table {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Member Dashboard */
+body.dark-theme .country-progress,
+body.dark-theme .participation-requests {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Member Dashboard Table */
+body.dark-theme .participation-requests table,
+body.dark-theme .participation-requests th,
+body.dark-theme .participation-requests td {
+    color: #f5f0e6;
+}
+
+/* Instructor Profile Pages */
+body.dark-theme .instructor-table {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Table Cells Across Pages */
+body.dark-theme .offerings-table th,
+body.dark-theme .offerings-table td,
+body.dark-theme .instructors-table th,
+body.dark-theme .instructors-table td,
+body.dark-theme .instructor-table th,
+body.dark-theme .instructor-table td {
+    color: #f5f0e6;
+}
+
+/* Breadcrumbs */
+body.dark-theme .breadcrumb,
+body.dark-theme .breadcrumb span {
+    color: #f5f0e6;
+}
+
+body.dark-theme .breadcrumb a {
+    color: #f0cf83;
+}
+
+/* Page Titles and Section Headings */
+body.dark-theme .page-title,
+body.dark-theme .section-title,
+body.dark-theme .member-dashboard h2,
+body.dark-theme .offering-evaluation h2,
+body.dark-theme .request-offering h2,
+body.dark-theme .instructor-profile-page h2 {
+    color: #f5f0e6;
+}
+
+/* Offerings Filter and Sort Labels */
+body.dark-theme .country-filter label,
+body.dark-theme .offerings-sort label {
+    color: #f0cf83;
+}
+
+/* General Text Inside Dark Cards */
+body.dark-theme .country-progress p,
+body.dark-theme .participation-requests p,
+body.dark-theme .club-mission p {
+    color: #f5f0e6;
+}
+
+/* PHASE 3 - DASHBOARD DARK MODE FIX
+
+/* Manager Dashboard - Table Rows */
+body.dark-theme .offerings-table td {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Member Dashboard - Table Rows */
+body.dark-theme .participation-requests table td {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+/* Breadcrumbs on Both Dashboards */
+body.dark-theme .breadcrumb {
+    background-color: #3f3f3f;
+    color: #f5f0e6;
+}
+
+body.dark-theme .breadcrumb a {
+    color: #f0cf83;
+}
+
+/* Phase 3 - Home Page Review Visibility Fix */
+
+body.dark-theme .reviews .review {
+    background-color: #ffffff;
+    color: #2b2b2b;
+}
+
 body.dark-theme .reviews .review h3,
 body.dark-theme .reviews .review p {
     color: #2b2b2b;
 }
 
-/* Keep review stars gold in dark mode */
+/* Keep the review stars gold */
 body.dark-theme .reviews .review p:first-of-type {
     color: #d99a00;
-}
-
-#preferred-date option.past-date {
-    color: #999999;
 }

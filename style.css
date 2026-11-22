@@ -1188,7 +1188,7 @@ body.dark-theme .participation-requests td {
 
 /* Instructor Profile Pages */
 body.dark-theme .instructor-table {
-    background-color: #343A30
+    background-color: #343A30;
 }
 
 /* Table Cells Across Pages */
@@ -1234,7 +1234,7 @@ body.dark-theme .club-mission p {
     color: #f5f0e6;
 }
 
-/* PHASE 3 - DASHBOARD DARK MODE FIX
+/* PHASE 3 - DASHBOARD DARK MODE FIX */
 
 /* Manager Dashboard - Table Rows */
 body.dark-theme .offerings-table td {
@@ -1301,4 +1301,23 @@ body.dark-theme .instructor-card:hover {
 body.dark-theme .participation-requests {
     padding: 20px;
     border-radius: 10px;
+}
+
+/* Dark Travel Theme - Instructor Table Rows */
+
+body.dark-theme .instructors-table tr:nth-child(even) {
+    background-color: #3D4639;
+}
+
+body.dark-theme .instructors-table tr:hover {
+    background-color: #495445;
+}
+
+/* Dark Travel Theme - Button Text */
+
+body.dark-theme .button,
+body.dark-theme .btn,
+body.dark-theme .action-button,
+body.dark-theme button {
+    color: #F1EBDD;
 }
